@@ -11,9 +11,9 @@ import Foundation
 class RemoteObject: GlobalRemoteObject {
     let group: Group;
     
-    init(id: String, creationDate: NSDate, group: Group, creator: User) {
+    init(id: String, creationDate: NSDate, group: Group, creator: User?, lastUpdateDate: NSDate, lastUpdater: User?) {
         self.group = group;
-        super.init(id: id, creationDate: creationDate, creator: creator);
+        super.init(id: id, creationDate: creationDate, creator: creator, lastUpdateDate: lastUpdateDate, lastUpdater: lastUpdater);
     }
     
     init(group: Group, creator: User) {

@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Sign In View Controller-->
@@ -20,8 +22,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SourceCodeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-39-R4Y">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKq-Qd-sVp">
-                                <rect key="frame" x="160" y="226" width="280" height="145"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKq-Qd-sVp">
+                                <rect key="frame" x="160" y="227" width="280" height="145"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOO-ZM-sbu">
                                         <rect key="frame" x="20" y="20" width="240" height="30"/>
@@ -60,7 +62,7 @@
                                     <constraint firstItem="1RI-DH-ms4" firstAttribute="top" secondItem="sSI-tI-2Hb" secondAttribute="bottom" constant="8" id="wc1-g5-yZQ"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HackathonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rw4-5i-ohc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HackathonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rw4-5i-ohc">
                                 <rect key="frame" x="164" y="156" width="272" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="CXq-9o-Ou8"/>
@@ -119,22 +121,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fmZ-7x-cXy">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="itemSize" width="140" height="160"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hht-sB-BLP">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProjectCollectionViewCell" id="Hht-sB-BLP" customClass="ProjectCollectionViewCell" customModule="HackathonApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="160"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vx8-Kd-nHW">
+                                            <rect key="frame" x="20" y="8" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="bAQ-w7-79k"/>
+                                                <constraint firstAttribute="width" secondItem="vx8-Kd-nHW" secondAttribute="height" multiplier="1:1" id="gor-Dj-lGO"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acL-Gv-ses">
+                                            <rect key="frame" x="47" y="116" width="45.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQt-xG-q87">
+                                            <rect key="frame" x="52" y="133" width="36" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.65599338500000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="acL-Gv-ses" firstAttribute="top" secondItem="vx8-Kd-nHW" secondAttribute="bottom" constant="8" id="3bb-6R-mrY"/>
+                                    <constraint firstAttribute="centerX" secondItem="acL-Gv-ses" secondAttribute="centerX" id="5KA-0s-q14"/>
+                                    <constraint firstItem="aQt-xG-q87" firstAttribute="top" secondItem="acL-Gv-ses" secondAttribute="bottom" id="BSd-pi-WSm"/>
+                                    <constraint firstAttribute="centerX" secondItem="vx8-Kd-nHW" secondAttribute="centerX" id="Tmo-hv-ci8"/>
+                                    <constraint firstItem="vx8-Kd-nHW" firstAttribute="top" secondItem="Hht-sB-BLP" secondAttribute="topMargin" id="oKb-Ub-wtS"/>
+                                    <constraint firstAttribute="centerX" secondItem="aQt-xG-q87" secondAttribute="centerX" id="w2e-na-l8F"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="vx8-Kd-nHW" id="AYc-7Z-3lg"/>
+                                    <outlet property="projectNameLabel" destination="acL-Gv-ses" id="RFS-JQ-C9d"/>
+                                    <outlet property="statusLabel" destination="aQt-xG-q87" id="28J-9Z-J0R"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HackathonSectionHeader" id="FWt-z1-oBm" customClass="HackathonSectionHeader" customModule="HackathonApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hackathon #n - Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-MC-IqT">
+                                    <rect key="frame" x="28" y="14.5" width="544" height="20"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailingMargin" secondItem="jsb-MC-IqT" secondAttribute="trailing" constant="20" id="7BI-Nu-UxE"/>
+                                <constraint firstItem="jsb-MC-IqT" firstAttribute="leading" secondItem="FWt-z1-oBm" secondAttribute="leadingMargin" constant="20" id="c6I-fy-dJU"/>
+                                <constraint firstAttribute="centerY" secondItem="jsb-MC-IqT" secondAttribute="centerY" constant="0.5" id="w5e-65-8jS"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="sectionHeaderLabel" destination="jsb-MC-IqT" id="sq8-wX-R4z"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="S2L-nM-lLh" id="Fiy-Ud-bCP"/>
                             <outlet property="delegate" destination="S2L-nM-lLh" id="zE7-wC-KWN"/>

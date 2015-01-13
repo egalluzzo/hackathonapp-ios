@@ -8,9 +8,20 @@
 
 import Foundation
 
-class User: RemoteObject {
+var _currentUser: User?;
+
+class User: GlobalRemoteObject {
+    
     var name: String = ""
     var email: String = ""
+    
+    class func currentUser() -> User? {
+        return _currentUser;
+    }
+    
+    class func setCurrentUser(newUser: User?) {
+        _currentUser = newUser;
+    }
 
 // Trying to implement Hashable...
 //    func hashValue() -> int {

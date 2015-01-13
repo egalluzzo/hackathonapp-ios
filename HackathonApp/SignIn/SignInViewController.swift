@@ -27,6 +27,15 @@ class SignInViewController: UIViewController {
     }
     
     func signInTapped() {
+        var me = User(creator: nil);
+        me.name = "Eric Galluzzo";
+        me.email = "egalluzzo@gmail.com";
+        User.setCurrentUser(me);
+        
+        var myGroup = Group(creator: nil);
+        myGroup.name = "Kroger";
+        Group.setCurrentGroup(myGroup);
+        
         self.performSegueWithIdentifier("SignInToHackathonsSegue", sender: self);
     }
     

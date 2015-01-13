@@ -21,5 +21,8 @@ enum ProjectStatus {
 class Project: RemoteObject {
     var name: String = ""
     var status: ProjectStatus = .NotStarted;
-    let userRoles: [UserRole] = []
+    var description: String = "";
+    var avatarUrl: String = "";
+    var repositoryUrl: String = "";
+    var hackathon: Hackathon?;
 }

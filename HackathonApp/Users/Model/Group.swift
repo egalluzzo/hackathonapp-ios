@@ -8,7 +8,17 @@
 
 import Foundation
 
+var _currentGroup: Group?;
+
 class Group: GlobalRemoteObject {
     var name: String = ""
     let userRoles: [UserRole] = []
+    
+    class func currentGroup() -> Group? {
+        return _currentGroup;
+    }
+    
+    class func setCurrentGroup(newGroup: Group?) {
+        _currentGroup = newGroup;
+    }
 }

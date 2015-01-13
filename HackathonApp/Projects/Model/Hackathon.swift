@@ -11,5 +11,5 @@ import Foundation
 class Hackathon: RemoteObject {
     var name: String = "";
     var date: NSDate = NSDate();
-    let projects: Array<Project> = [];
+    var projects: [Project] = [];
 }
