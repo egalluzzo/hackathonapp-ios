@@ -8,14 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		07AF4A90198489820035D3E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4A8F198489820035D3E1 /* AppDelegate.swift */; };
-		07AF4A92198489820035D3E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4A91198489820035D3E1 /* ViewController.swift */; };
 		07AF4A95198489820035D3E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A93198489820035D3E1 /* Main.storyboard */; };
 		07AF4A97198489820035D3E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A96198489820035D3E1 /* Images.xcassets */; };
 		07AF4AA3198489820035D3E1 /* HackathonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AA2198489820035D3E1 /* HackathonAppTests.swift */; };
+		07AF4AB219855DB00035D3E1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB119855DB00035D3E1 /* SignInViewController.swift */; };
+		07AF4AB51989E7CB0035D3E1 /* HackathonsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB41989E7CB0035D3E1 /* HackathonsCollectionViewController.swift */; };
+		07AF4AB9198D7F1E0035D3E1 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB8198D7F1E0035D3E1 /* Project.swift */; };
+		07AF4ABA198D7F1E0035D3E1 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB8198D7F1E0035D3E1 /* Project.swift */; };
+		07AF4ABE198D80100035D3E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4ABD198D80100035D3E1 /* User.swift */; };
+		07AF4ABF198D80100035D3E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4ABD198D80100035D3E1 /* User.swift */; };
+		07AF4AC1198D814C0035D3E1 /* Hackathon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC0198D814C0035D3E1 /* Hackathon.swift */; };
+		07AF4AC2198D814C0035D3E1 /* Hackathon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC0198D814C0035D3E1 /* Hackathon.swift */; };
+		07AF4AC4198D84D90035D3E1 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC3198D84D90035D3E1 /* Role.swift */; };
+		07AF4AC5198D84D90035D3E1 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC3198D84D90035D3E1 /* Role.swift */; };
+		07AF4AC7198D85740035D3E1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC6198D85740035D3E1 /* Group.swift */; };
+		07AF4AC8198D85740035D3E1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC6198D85740035D3E1 /* Group.swift */; };
+		07AF4ACA198D898E0035D3E1 /* UserRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC9198D898E0035D3E1 /* UserRole.swift */; };
+		07AF4ACB198D898E0035D3E1 /* UserRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AC9198D898E0035D3E1 /* UserRole.swift */; };
+		07AF4ACF198D8A7F0035D3E1 /* RemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4ACE198D8A7F0035D3E1 /* RemoteObject.swift */; };
+		07AF4AD0198D8A7F0035D3E1 /* RemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4ACE198D8A7F0035D3E1 /* RemoteObject.swift */; };
+		07AF4AD2198D8CAE0035D3E1 /* GlobalRemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AD1198D8CAE0035D3E1 /* GlobalRemoteObject.swift */; };
+		07AF4AD3198D8CAE0035D3E1 /* GlobalRemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AD1198D8CAE0035D3E1 /* GlobalRemoteObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		07AF4A9D198489820035D3E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AF4A82198489820035D3E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AF4A89198489820035D3E1;
+			remoteInfo = HackathonApp;
+		};
+		07AF4AAC19855CE90035D3E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AF4A82198489820035D3E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AF4A89198489820035D3E1;
+			remoteInfo = HackathonApp;
+		};
+		07AF4AAE19855CE90035D3E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07AF4A82198489820035D3E1 /* Project object */;
 			proxyType = 1;
@@ -28,12 +59,21 @@
 		07AF4A8A198489820035D3E1 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AF4A8E198489820035D3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AF4A8F198489820035D3E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07AF4A91198489820035D3E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07AF4A94198489820035D3E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07AF4A96198489820035D3E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		07AF4A9C198489820035D3E1 /* HackathonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AF4AA1198489820035D3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AF4AA2198489820035D3E1 /* HackathonAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppTests.swift; sourceTree = "<group>"; };
+		07AF4AB119855DB00035D3E1 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
+		07AF4AB41989E7CB0035D3E1 /* HackathonsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HackathonsCollectionViewController.swift; path = ../HackathonsCollectionViewController.swift; sourceTree = "<group>"; };
+		07AF4AB8198D7F1E0035D3E1 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		07AF4ABD198D80100035D3E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../Users/Model/User.swift; sourceTree = "<group>"; };
+		07AF4AC0198D814C0035D3E1 /* Hackathon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hackathon.swift; sourceTree = "<group>"; };
+		07AF4AC3198D84D90035D3E1 /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Role.swift; path = ../../Users/Model/Role.swift; sourceTree = "<group>"; };
+		07AF4AC6198D85740035D3E1 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = ../../Users/Model/Group.swift; sourceTree = "<group>"; };
+		07AF4AC9198D898E0035D3E1 /* UserRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRole.swift; path = ../../Users/Model/UserRole.swift; sourceTree = "<group>"; };
+		07AF4ACE198D8A7F0035D3E1 /* RemoteObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteObject.swift; sourceTree = "<group>"; };
+		07AF4AD1198D8CAE0035D3E1 /* GlobalRemoteObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalRemoteObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075B999A1A654A140074F7FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4AB41989E7CB0035D3E1 /* HackathonsCollectionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		075B999B1A654A400074F7FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4AB119855DB00035D3E1 /* SignInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		07AF4A81198489820035D3E1 = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +131,11 @@
 		07AF4A8C198489820035D3E1 /* HackathonApp */ = {
 			isa = PBXGroup;
 			children = (
+				07AF4ACC198D8A410035D3E1 /* Common */,
+				07AF4ABB198D7F9A0035D3E1 /* Users */,
+				07AF4AB31989E3EA0035D3E1 /* Projects */,
+				07AF4AB019855D590035D3E1 /* SignIn */,
 				07AF4A8F198489820035D3E1 /* AppDelegate.swift */,
-				07AF4A91198489820035D3E1 /* ViewController.swift */,
 				07AF4A93198489820035D3E1 /* Main.storyboard */,
 				07AF4A96198489820035D3E1 /* Images.xcassets */,
 				07AF4A8D198489820035D3E1 /* Supporting Files */,
@@ -107,6 +166,68 @@
 				07AF4AA1198489820035D3E1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AF4AB019855D590035D3E1 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				075B999B1A654A400074F7FD /* View */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		07AF4AB31989E3EA0035D3E1 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4AB7198D7EEC0035D3E1 /* Model */,
+				075B999A1A654A140074F7FD /* View */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		07AF4AB7198D7EEC0035D3E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4AB8198D7F1E0035D3E1 /* Project.swift */,
+				07AF4AC0198D814C0035D3E1 /* Hackathon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07AF4ABB198D7F9A0035D3E1 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4ABC198D7FC20035D3E1 /* Model */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		07AF4ABC198D7FC20035D3E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07AF4ACC198D8A410035D3E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4ACD198D8A480035D3E1 /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		07AF4ACD198D8A480035D3E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07AF4ABD198D80100035D3E1 /* User.swift */,
+				07AF4AC3198D84D90035D3E1 /* Role.swift */,
+				07AF4AC6198D85740035D3E1 /* Group.swift */,
+				07AF4AC9198D898E0035D3E1 /* UserRole.swift */,
+				07AF4ACE198D8A7F0035D3E1 /* RemoteObject.swift */,
+				07AF4AD1198D8CAE0035D3E1 /* GlobalRemoteObject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +262,8 @@
 			);
 			dependencies = (
 				07AF4A9E198489820035D3E1 /* PBXTargetDependency */,
+				07AF4AAD19855CE90035D3E1 /* PBXTargetDependency */,
+				07AF4AAF19855CE90035D3E1 /* PBXTargetDependency */,
 			);
 			name = HackathonAppTests;
 			productName = HackathonAppTests;
@@ -208,8 +331,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07AF4A92198489820035D3E1 /* ViewController.swift in Sources */,
+				07AF4AB219855DB00035D3E1 /* SignInViewController.swift in Sources */,
+				07AF4AC4198D84D90035D3E1 /* Role.swift in Sources */,
+				07AF4ACF198D8A7F0035D3E1 /* RemoteObject.swift in Sources */,
+				07AF4AC1198D814C0035D3E1 /* Hackathon.swift in Sources */,
+				07AF4AC7198D85740035D3E1 /* Group.swift in Sources */,
+				07AF4AB51989E7CB0035D3E1 /* HackathonsCollectionViewController.swift in Sources */,
 				07AF4A90198489820035D3E1 /* AppDelegate.swift in Sources */,
+				07AF4AD2198D8CAE0035D3E1 /* GlobalRemoteObject.swift in Sources */,
+				07AF4ACA198D898E0035D3E1 /* UserRole.swift in Sources */,
+				07AF4ABE198D80100035D3E1 /* User.swift in Sources */,
+				07AF4AB9198D7F1E0035D3E1 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AF4AD0198D8A7F0035D3E1 /* RemoteObject.swift in Sources */,
 				07AF4AA3198489820035D3E1 /* HackathonAppTests.swift in Sources */,
+				07AF4ACB198D898E0035D3E1 /* UserRole.swift in Sources */,
+				07AF4ABA198D7F1E0035D3E1 /* Project.swift in Sources */,
+				07AF4ABF198D80100035D3E1 /* User.swift in Sources */,
+				07AF4AC8198D85740035D3E1 /* Group.swift in Sources */,
+				07AF4AC2198D814C0035D3E1 /* Hackathon.swift in Sources */,
+				07AF4AD3198D8CAE0035D3E1 /* GlobalRemoteObject.swift in Sources */,
+				07AF4AC5198D84D90035D3E1 /* Role.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +368,16 @@
 			isa = PBXTargetDependency;
 			target = 07AF4A89198489820035D3E1 /* HackathonApp */;
 			targetProxy = 07AF4A9D198489820035D3E1 /* PBXContainerItemProxy */;
+		};
+		07AF4AAD19855CE90035D3E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AF4A89198489820035D3E1 /* HackathonApp */;
+			targetProxy = 07AF4AAC19855CE90035D3E1 /* PBXContainerItemProxy */;
+		};
+		07AF4AAF19855CE90035D3E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AF4A89198489820035D3E1 /* HackathonApp */;
+			targetProxy = 07AF4AAE19855CE90035D3E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -328,6 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HackathonApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -339,6 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HackathonApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +549,7 @@
 				07AF4AA8198489820035D3E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07AF4AA9198489820035D3E1 /* Build configuration list for PBXNativeTarget "HackathonAppTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +558,7 @@
 				07AF4AAB198489820035D3E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

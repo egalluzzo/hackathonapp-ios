@@ -1,25 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yWJ-Hh-e7g">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Sign In View Controller-->
+        <scene sceneID="gFm-87-LMC">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yWJ-Hh-e7g" customClass="SignInViewController" customModule="HackathonApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="832-wO-NX5"/>
+                        <viewControllerLayoutGuide type="bottom" id="5zb-31-1eu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <view key="view" contentMode="scaleToFill" id="zWD-AZ-gt7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SourceCodeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-39-R4Y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKq-Qd-sVp">
+                                <rect key="frame" x="160" y="226" width="280" height="145"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOO-ZM-sbu">
+                                        <rect key="frame" x="20" y="20" width="240" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSI-tI-2Hb">
+                                        <rect key="frame" x="20" y="58" width="240" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RI-DH-ms4">
+                                        <rect key="frame" x="20" y="96" width="48" height="30"/>
+                                        <state key="normal" title="Sign In"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wG-HM-D58">
+                                        <rect key="frame" x="203" y="96" width="57" height="30"/>
+                                        <state key="normal" title="Register"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yOO-ZM-sbu" secondAttribute="trailing" constant="20" id="9Iw-kQ-ymP"/>
+                                    <constraint firstAttribute="height" constant="145" id="DmG-0X-f3E"/>
+                                    <constraint firstItem="sSI-tI-2Hb" firstAttribute="trailing" secondItem="yOO-ZM-sbu" secondAttribute="trailing" id="Rk8-qb-HTK"/>
+                                    <constraint firstItem="sSI-tI-2Hb" firstAttribute="trailing" secondItem="7wG-HM-D58" secondAttribute="trailing" id="TDG-1w-EmL"/>
+                                    <constraint firstItem="yOO-ZM-sbu" firstAttribute="top" secondItem="PKq-Qd-sVp" secondAttribute="top" constant="20" id="aI0-0S-YkY"/>
+                                    <constraint firstItem="7wG-HM-D58" firstAttribute="top" secondItem="sSI-tI-2Hb" secondAttribute="bottom" constant="8" id="c2y-gh-DYP"/>
+                                    <constraint firstItem="yOO-ZM-sbu" firstAttribute="leading" secondItem="PKq-Qd-sVp" secondAttribute="leading" constant="20" id="d0I-aR-YFo"/>
+                                    <constraint firstItem="sSI-tI-2Hb" firstAttribute="top" secondItem="yOO-ZM-sbu" secondAttribute="bottom" constant="8" id="eAB-UJ-X0B"/>
+                                    <constraint firstAttribute="width" constant="280" id="hoz-dK-lN2"/>
+                                    <constraint firstItem="sSI-tI-2Hb" firstAttribute="leading" secondItem="1RI-DH-ms4" secondAttribute="leading" id="mzu-Zh-gtY"/>
+                                    <constraint firstItem="sSI-tI-2Hb" firstAttribute="leading" secondItem="yOO-ZM-sbu" secondAttribute="leading" id="pbK-mY-doB"/>
+                                    <constraint firstItem="1RI-DH-ms4" firstAttribute="top" secondItem="sSI-tI-2Hb" secondAttribute="bottom" constant="8" id="wc1-g5-yZQ"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HackathonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rw4-5i-ohc">
+                                <rect key="frame" x="164" y="156" width="272" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="CXq-9o-Ou8"/>
+                                    <constraint firstAttribute="width" constant="272" id="SOB-ry-cJd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PKq-Qd-sVp" firstAttribute="top" secondItem="rw4-5i-ohc" secondAttribute="bottom" constant="8.5" id="0cx-3h-X4k"/>
+                            <constraint firstItem="lMU-39-R4Y" firstAttribute="top" secondItem="zWD-AZ-gt7" secondAttribute="top" id="9cd-oY-qvg"/>
+                            <constraint firstItem="lMU-39-R4Y" firstAttribute="leading" secondItem="zWD-AZ-gt7" secondAttribute="leading" id="TJe-7L-SfB"/>
+                            <constraint firstItem="lMU-39-R4Y" firstAttribute="centerX" secondItem="rw4-5i-ohc" secondAttribute="centerX" id="YNy-9y-0fk"/>
+                            <constraint firstAttribute="trailing" secondItem="lMU-39-R4Y" secondAttribute="trailing" id="dV0-9X-yb0"/>
+                            <constraint firstItem="lMU-39-R4Y" firstAttribute="centerY" secondItem="PKq-Qd-sVp" secondAttribute="centerY" constant="0.5" id="m3m-Ra-1Bk"/>
+                            <constraint firstItem="5zb-31-1eu" firstAttribute="top" secondItem="lMU-39-R4Y" secondAttribute="bottom" id="p2q-gh-xGL"/>
+                            <constraint firstItem="lMU-39-R4Y" firstAttribute="centerX" secondItem="PKq-Qd-sVp" secondAttribute="centerX" id="zg5-MC-nOe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="lMU-39-R4Y" id="GA0-Ed-o8U"/>
+                        <outlet property="passwordTextField" destination="sSI-tI-2Hb" id="l1a-Qp-OY0"/>
+                        <outlet property="registerButton" destination="7wG-HM-D58" id="nEj-ix-eTN"/>
+                        <outlet property="signInButton" destination="1RI-DH-ms4" id="a41-Ea-XTs"/>
+                        <outlet property="signInView" destination="PKq-Qd-sVp" id="izh-OX-XIg"/>
+                        <outlet property="usernameTextField" destination="yOO-ZM-sbu" id="FJ3-fA-x29"/>
+                        <segue destination="wog-DF-3Jj" kind="show" identifier="SignInToHackathonsSegue" id="Ymx-sH-STr"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiD-Wr-dRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-960" y="57"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kJI-yK-uz5">
+            <objects>
+                <navigationController id="wog-DF-3Jj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5EV-48-Klr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.65599338503649629" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S2L-nM-lLh" kind="relationship" relationship="rootViewController" id="B1t-Rc-8bH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERV-7l-Zw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167" y="57"/>
+        </scene>
+        <!--Hackathons-->
+        <scene sceneID="bIb-Hy-J6E">
+            <objects>
+                <collectionViewController id="S2L-nM-lLh" customClass="HackathonsCollectionViewController" customModule="HackathonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="D1T-rH-Ops">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fmZ-7x-cXy">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hht-sB-BLP">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="S2L-nM-lLh" id="Fiy-Ud-bCP"/>
+                            <outlet property="delegate" destination="S2L-nM-lLh" id="zE7-wC-KWN"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Hackathons" id="dTP-ke-CE0"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VO3-Ee-weF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="57"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HackathonLogo" width="272" height="62"/>
+        <image name="SourceCodeBackground" width="1024" height="1024"/>
+    </resources>
 </document>
