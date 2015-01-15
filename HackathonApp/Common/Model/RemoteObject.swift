@@ -20,4 +20,8 @@ class RemoteObject: GlobalRemoteObject {
         self.group = group;
         super.init(creator: creator);
     }
+    
+    convenience init() {
+        self.init(group: Group.currentGroup()!, creator: User.currentUser()!);
+    }
 }

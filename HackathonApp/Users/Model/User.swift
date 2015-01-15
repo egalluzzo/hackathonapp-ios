@@ -22,6 +22,11 @@ class User: GlobalRemoteObject {
     class func setCurrentUser(newUser: User?) {
         _currentUser = newUser;
     }
+    
+    func gravatarUrl(#sizeInPixels: UInt) -> String {
+        let emailMD5Hash = self.email.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).lowercaseString.md5();
+        return "http://www.gravatar.com/avatar/\(emailMD5Hash)?s=\(sizeInPixels)&d=mm";
+    }
 
 // Trying to implement Hashable...
 //    func hashValue() -> int {

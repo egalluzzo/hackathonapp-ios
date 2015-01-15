@@ -25,4 +25,8 @@ class Project: RemoteObject {
     var avatarUrl: String = "";
     var repositoryUrl: String = "";
     var hackathon: Hackathon?;
+    
+    var idea: Bool {
+        return (hackathon == nil);
+    }
 }

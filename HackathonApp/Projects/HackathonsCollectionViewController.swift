@@ -49,16 +49,19 @@ class HackathonsCollectionViewController: UICollectionViewController {
     }
     
     private func createProject(#name: String) -> Project {
-        var project = Project(group: Group(creator: User(creator: nil)), creator: User(creator: nil));
+        var project = Project();
         project.name = name;
         return project;
     }
     
     private func createHackathon(#name: String, date: NSDate, projects: [Project]) -> Hackathon {
-        var hackathon = Hackathon(group: Group(creator: User(creator:nil)), creator: User(creator:nil));
+        var hackathon = Hackathon();
         hackathon.name = name;
         hackathon.date = date;
         hackathon.projects = projects;
+        for project in projects {
+            project.hackathon = hackathon;
+        }
         return hackathon;
     }
     

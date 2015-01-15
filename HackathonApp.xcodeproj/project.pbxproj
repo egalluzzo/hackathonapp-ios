@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		075B999D1A654F170074F7FD /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B999C1A654F170074F7FD /* ProjectCollectionViewCell.swift */; };
 		075B999F1A6553030074F7FD /* HackathonSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B999E1A6553030074F7FD /* HackathonSectionHeader.swift */; };
+		075B99A21A659E050074F7FD /* Swift-MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99A11A659E050074F7FD /* Swift-MD5.swift */; };
+		075B99AD1A6740A80074F7FD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99AC1A6740A80074F7FD /* Colors.swift */; };
+		075B99AE1A67423A0074F7FD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99AC1A6740A80074F7FD /* Colors.swift */; };
+		075B99AF1A67423D0074F7FD /* Swift-MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99A11A659E050074F7FD /* Swift-MD5.swift */; };
 		07AF4A90198489820035D3E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4A8F198489820035D3E1 /* AppDelegate.swift */; };
 		07AF4A95198489820035D3E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A93198489820035D3E1 /* Main.storyboard */; };
 		07AF4A97198489820035D3E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A96198489820035D3E1 /* Images.xcassets */; };
@@ -60,6 +64,9 @@
 /* Begin PBXFileReference section */
 		075B999C1A654F170074F7FD /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		075B999E1A6553030074F7FD /* HackathonSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackathonSectionHeader.swift; sourceTree = "<group>"; };
+		075B99A11A659E050074F7FD /* Swift-MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift-MD5.swift"; sourceTree = "<group>"; };
+		075B99A51A659ED20074F7FD /* HackathonApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackathonApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		075B99AC1A6740A80074F7FD /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		07AF4A8A198489820035D3E1 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AF4A8E198489820035D3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AF4A8F198489820035D3E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +123,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		075B99A01A659DD90074F7FD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				075B99A11A659E050074F7FD /* Swift-MD5.swift */,
+				075B99AC1A6740A80074F7FD /* Colors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		07AF4A81198489820035D3E1 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +158,7 @@
 				07AF4AB31989E3EA0035D3E1 /* Projects */,
 				07AF4AB019855D590035D3E1 /* SignIn */,
 				07AF4A8F198489820035D3E1 /* AppDelegate.swift */,
+				075B99A51A659ED20074F7FD /* HackathonApp-Bridging-Header.h */,
 				07AF4A93198489820035D3E1 /* Main.storyboard */,
 				07AF4A96198489820035D3E1 /* Images.xcassets */,
 				07AF4A8D198489820035D3E1 /* Supporting Files */,
@@ -218,6 +235,7 @@
 		07AF4ACC198D8A410035D3E1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				075B99A01A659DD90074F7FD /* Utilities */,
 				07AF4ACD198D8A480035D3E1 /* Model */,
 			);
 			path = Common;
@@ -338,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07AF4AB219855DB00035D3E1 /* SignInViewController.swift in Sources */,
+				075B99AD1A6740A80074F7FD /* Colors.swift in Sources */,
 				07AF4AC4198D84D90035D3E1 /* Role.swift in Sources */,
 				07AF4ACF198D8A7F0035D3E1 /* RemoteObject.swift in Sources */,
 				07AF4AC1198D814C0035D3E1 /* Hackathon.swift in Sources */,
@@ -347,6 +366,7 @@
 				07AF4AD2198D8CAE0035D3E1 /* GlobalRemoteObject.swift in Sources */,
 				075B999D1A654F170074F7FD /* ProjectCollectionViewCell.swift in Sources */,
 				075B999F1A6553030074F7FD /* HackathonSectionHeader.swift in Sources */,
+				075B99A21A659E050074F7FD /* Swift-MD5.swift in Sources */,
 				07AF4ACA198D898E0035D3E1 /* UserRole.swift in Sources */,
 				07AF4ABE198D80100035D3E1 /* User.swift in Sources */,
 				07AF4AB9198D7F1E0035D3E1 /* Project.swift in Sources */,
@@ -358,7 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07AF4AD0198D8A7F0035D3E1 /* RemoteObject.swift in Sources */,
+				075B99AE1A67423A0074F7FD /* Colors.swift in Sources */,
 				07AF4AA3198489820035D3E1 /* HackathonAppTests.swift in Sources */,
+				075B99AF1A67423D0074F7FD /* Swift-MD5.swift in Sources */,
 				07AF4ACB198D898E0035D3E1 /* UserRole.swift in Sources */,
 				07AF4ABA198D7F1E0035D3E1 /* Project.swift in Sources */,
 				07AF4ABF198D80100035D3E1 /* User.swift in Sources */,
@@ -485,10 +507,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HackathonApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackathonApp/HackathonApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -497,10 +522,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HackathonApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackathonApp/HackathonApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

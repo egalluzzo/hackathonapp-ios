@@ -9,8 +9,6 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-    @IBOutlet weak var backgroundImageView: UIImageView!
-    @IBOutlet weak var signInView: UIView!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
@@ -19,9 +17,12 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        signInView.layer.cornerRadius = 5.0
-        themeButton(signInButton)
-        themeButton(registerButton)
+        usernameTextField.leftViewMode = UITextFieldViewMode.Always;
+        usernameTextField.leftView = UIImageView(image: UIImage(named: "username_icon"));
+        
+        passwordTextField.leftViewMode = UITextFieldViewMode.Always;
+        passwordTextField.leftView = UIImageView(image: UIImage(named: "pw_icon"));
+        
         signInButton.addTarget(self, action: "signInTapped", forControlEvents: UIControlEvents.TouchUpInside)
         registerButton.addTarget(self, action: "registerTapped", forControlEvents: UIControlEvents.TouchUpInside)
     }
@@ -40,15 +41,20 @@ class SignInViewController: UIViewController {
     }
     
     func registerTapped() {
-        NSLog("Not yet implemented")
+        UIAlertView(
+            title: "Coming soon!",
+            message: "This functionality isn't yet implemented. Check back soon!",
+            delegate: nil,
+            cancelButtonTitle: "OK")
+            .show();
     }
     
-    private func themeButton(button: UIButton) {
-        button.layer.cornerRadius = 5.0
-        button.backgroundColor = UIColor.greenColor().colorWithAlphaComponent(0.75);
-        button.contentEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
-        for controlState in [UIControlState.Normal, UIControlState.Highlighted, UIControlState.Selected] {
-            button.setTitleColor(UIColor.darkTextColor(), forState: controlState)
-        }
-    }
+//    private func themeButton(button: UIButton) {
+//        button.layer.cornerRadius = 5.0
+//        button.backgroundColor = UIColor.greenColor().colorWithAlphaComponent(0.75);
+//        button.contentEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
+//        for controlState in [UIControlState.Normal, UIControlState.Highlighted, UIControlState.Selected] {
+//            button.setTitleColor(UIColor.darkTextColor(), forState: controlState)
+//        }
+//    }
 }
