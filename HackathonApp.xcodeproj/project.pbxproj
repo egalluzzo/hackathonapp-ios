@@ -10,15 +10,21 @@
 		075B999D1A654F170074F7FD /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B999C1A654F170074F7FD /* ProjectCollectionViewCell.swift */; };
 		075B999F1A6553030074F7FD /* HackathonSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B999E1A6553030074F7FD /* HackathonSectionHeader.swift */; };
 		075B99A21A659E050074F7FD /* Swift-MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99A11A659E050074F7FD /* Swift-MD5.swift */; };
-		075B99AD1A6740A80074F7FD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99AC1A6740A80074F7FD /* Colors.swift */; };
-		075B99AE1A67423A0074F7FD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99AC1A6740A80074F7FD /* Colors.swift */; };
 		075B99AF1A67423D0074F7FD /* Swift-MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B99A11A659E050074F7FD /* Swift-MD5.swift */; };
+		07AE89CB1A681DD90045ADA1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89CA1A681DD90045ADA1 /* Theme.swift */; };
+		07AE89CD1A681F060045ADA1 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89CC1A681F060045ADA1 /* IconTextField.swift */; };
+		07AE89CF1A686F680045ADA1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89CE1A686F680045ADA1 /* DashboardViewController.swift */; };
+		07AE89D11A693A2C0045ADA1 /* HackathonsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89D01A693A2C0045ADA1 /* HackathonsCollectionViewController.swift */; };
+		07AE89D31A6BFC890045ADA1 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AE89D21A6BFC890045ADA1 /* ProjectCollectionViewCell.xib */; };
+		07AE89D51A6BFCE80045ADA1 /* HackathonSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AE89D41A6BFCE80045ADA1 /* HackathonSectionHeader.xib */; };
+		07AE89D71A6C242F0045ADA1 /* DashboardCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89D61A6C242F0045ADA1 /* DashboardCollectionViewDataSource.swift */; };
+		07AE89D91A6C24EA0045ADA1 /* DashboardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89D81A6C24EA0045ADA1 /* DashboardCategory.swift */; };
+		07AE89DA1A6C24EA0045ADA1 /* DashboardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89D81A6C24EA0045ADA1 /* DashboardCategory.swift */; };
 		07AF4A90198489820035D3E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4A8F198489820035D3E1 /* AppDelegate.swift */; };
 		07AF4A95198489820035D3E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A93198489820035D3E1 /* Main.storyboard */; };
 		07AF4A97198489820035D3E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A96198489820035D3E1 /* Images.xcassets */; };
 		07AF4AA3198489820035D3E1 /* HackathonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AA2198489820035D3E1 /* HackathonAppTests.swift */; };
 		07AF4AB219855DB00035D3E1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB119855DB00035D3E1 /* SignInViewController.swift */; };
-		07AF4AB51989E7CB0035D3E1 /* HackathonsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB41989E7CB0035D3E1 /* HackathonsCollectionViewController.swift */; };
 		07AF4AB9198D7F1E0035D3E1 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB8198D7F1E0035D3E1 /* Project.swift */; };
 		07AF4ABA198D7F1E0035D3E1 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4AB8198D7F1E0035D3E1 /* Project.swift */; };
 		07AF4ABE198D80100035D3E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4ABD198D80100035D3E1 /* User.swift */; };
@@ -66,7 +72,14 @@
 		075B999E1A6553030074F7FD /* HackathonSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackathonSectionHeader.swift; sourceTree = "<group>"; };
 		075B99A11A659E050074F7FD /* Swift-MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift-MD5.swift"; sourceTree = "<group>"; };
 		075B99A51A659ED20074F7FD /* HackathonApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackathonApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		075B99AC1A6740A80074F7FD /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		07AE89CA1A681DD90045ADA1 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		07AE89CC1A681F060045ADA1 /* IconTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTextField.swift; sourceTree = "<group>"; };
+		07AE89CE1A686F680045ADA1 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		07AE89D01A693A2C0045ADA1 /* HackathonsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackathonsCollectionViewController.swift; sourceTree = "<group>"; };
+		07AE89D21A6BFC890045ADA1 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
+		07AE89D41A6BFCE80045ADA1 /* HackathonSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HackathonSectionHeader.xib; sourceTree = "<group>"; };
+		07AE89D61A6C242F0045ADA1 /* DashboardCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		07AE89D81A6C24EA0045ADA1 /* DashboardCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCategory.swift; sourceTree = "<group>"; };
 		07AF4A8A198489820035D3E1 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AF4A8E198489820035D3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AF4A8F198489820035D3E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,14 +88,13 @@
 		07AF4A9C198489820035D3E1 /* HackathonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AF4AA1198489820035D3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AF4AA2198489820035D3E1 /* HackathonAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppTests.swift; sourceTree = "<group>"; };
-		07AF4AB119855DB00035D3E1 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
-		07AF4AB41989E7CB0035D3E1 /* HackathonsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HackathonsCollectionViewController.swift; path = ../HackathonsCollectionViewController.swift; sourceTree = "<group>"; };
+		07AF4AB119855DB00035D3E1 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		07AF4AB8198D7F1E0035D3E1 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		07AF4ABD198D80100035D3E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../Users/Model/User.swift; sourceTree = "<group>"; };
+		07AF4ABD198D80100035D3E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07AF4AC0198D814C0035D3E1 /* Hackathon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hackathon.swift; sourceTree = "<group>"; };
-		07AF4AC3198D84D90035D3E1 /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Role.swift; path = ../../Users/Model/Role.swift; sourceTree = "<group>"; };
-		07AF4AC6198D85740035D3E1 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = ../../Users/Model/Group.swift; sourceTree = "<group>"; };
-		07AF4AC9198D898E0035D3E1 /* UserRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRole.swift; path = ../../Users/Model/UserRole.swift; sourceTree = "<group>"; };
+		07AF4AC3198D84D90035D3E1 /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		07AF4AC6198D85740035D3E1 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		07AF4AC9198D898E0035D3E1 /* UserRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRole.swift; sourceTree = "<group>"; };
 		07AF4ACE198D8A7F0035D3E1 /* RemoteObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteObject.swift; sourceTree = "<group>"; };
 		07AF4AD1198D8CAE0035D3E1 /* GlobalRemoteObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalRemoteObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,9 +120,14 @@
 		075B999A1A654A140074F7FD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				07AF4AB41989E7CB0035D3E1 /* HackathonsCollectionViewController.swift */,
+				07AE89D01A693A2C0045ADA1 /* HackathonsCollectionViewController.swift */,
 				075B999C1A654F170074F7FD /* ProjectCollectionViewCell.swift */,
 				075B999E1A6553030074F7FD /* HackathonSectionHeader.swift */,
+				07AE89CE1A686F680045ADA1 /* DashboardViewController.swift */,
+				07AE89D21A6BFC890045ADA1 /* ProjectCollectionViewCell.xib */,
+				07AE89D41A6BFCE80045ADA1 /* HackathonSectionHeader.xib */,
+				07AE89D61A6C242F0045ADA1 /* DashboardCollectionViewDataSource.swift */,
+				07AE89D81A6C24EA0045ADA1 /* DashboardCategory.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,9 +144,17 @@
 			isa = PBXGroup;
 			children = (
 				075B99A11A659E050074F7FD /* Swift-MD5.swift */,
-				075B99AC1A6740A80074F7FD /* Colors.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		07AE89C91A68099A0045ADA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07AE89CA1A681DD90045ADA1 /* Theme.swift */,
+				07AE89CC1A681F060045ADA1 /* IconTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		07AF4A81198489820035D3E1 = {
@@ -237,6 +262,7 @@
 			children = (
 				075B99A01A659DD90074F7FD /* Utilities */,
 				07AF4ACD198D8A480035D3E1 /* Model */,
+				07AE89C91A68099A0045ADA1 /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -337,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07AF4A95198489820035D3E1 /* Main.storyboard in Resources */,
+				07AE89D31A6BFC890045ADA1 /* ProjectCollectionViewCell.xib in Resources */,
+				07AE89D51A6BFCE80045ADA1 /* HackathonSectionHeader.xib in Resources */,
 				07AF4A97198489820035D3E1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,21 +383,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AE89CD1A681F060045ADA1 /* IconTextField.swift in Sources */,
 				07AF4AB219855DB00035D3E1 /* SignInViewController.swift in Sources */,
-				075B99AD1A6740A80074F7FD /* Colors.swift in Sources */,
 				07AF4AC4198D84D90035D3E1 /* Role.swift in Sources */,
+				07AE89D11A693A2C0045ADA1 /* HackathonsCollectionViewController.swift in Sources */,
 				07AF4ACF198D8A7F0035D3E1 /* RemoteObject.swift in Sources */,
+				07AE89D91A6C24EA0045ADA1 /* DashboardCategory.swift in Sources */,
 				07AF4AC1198D814C0035D3E1 /* Hackathon.swift in Sources */,
+				07AE89D71A6C242F0045ADA1 /* DashboardCollectionViewDataSource.swift in Sources */,
 				07AF4AC7198D85740035D3E1 /* Group.swift in Sources */,
-				07AF4AB51989E7CB0035D3E1 /* HackathonsCollectionViewController.swift in Sources */,
 				07AF4A90198489820035D3E1 /* AppDelegate.swift in Sources */,
 				07AF4AD2198D8CAE0035D3E1 /* GlobalRemoteObject.swift in Sources */,
 				075B999D1A654F170074F7FD /* ProjectCollectionViewCell.swift in Sources */,
 				075B999F1A6553030074F7FD /* HackathonSectionHeader.swift in Sources */,
 				075B99A21A659E050074F7FD /* Swift-MD5.swift in Sources */,
 				07AF4ACA198D898E0035D3E1 /* UserRole.swift in Sources */,
+				07AE89CB1A681DD90045ADA1 /* Theme.swift in Sources */,
 				07AF4ABE198D80100035D3E1 /* User.swift in Sources */,
 				07AF4AB9198D7F1E0035D3E1 /* Project.swift in Sources */,
+				07AE89CF1A686F680045ADA1 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,9 +410,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07AF4AD0198D8A7F0035D3E1 /* RemoteObject.swift in Sources */,
-				075B99AE1A67423A0074F7FD /* Colors.swift in Sources */,
 				07AF4AA3198489820035D3E1 /* HackathonAppTests.swift in Sources */,
 				075B99AF1A67423D0074F7FD /* Swift-MD5.swift in Sources */,
+				07AE89DA1A6C24EA0045ADA1 /* DashboardCategory.swift in Sources */,
 				07AF4ACB198D898E0035D3E1 /* UserRole.swift in Sources */,
 				07AF4ABA198D7F1E0035D3E1 /* Project.swift in Sources */,
 				07AF4ABF198D80100035D3E1 /* User.swift in Sources */,

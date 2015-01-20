@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProjectCollectionViewCell" id="VJa-tm-N6h" customClass="ProjectCollectionViewCell" customModule="HackathonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="112.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q3O-Uj-Jfx">
+                        <rect key="frame" x="13" y="8" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="Ae0-t2-z4N"/>
+                            <constraint firstAttribute="width" secondItem="Q3O-Uj-Jfx" secondAttribute="height" multiplier="1:1" id="FAf-FO-7b5"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gV-Cr-JZI" userLabel="Divider">
+                        <rect key="frame" x="8" y="76" width="74" height="1"/>
+                        <color key="backgroundColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="5Ut-kE-KCD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-Dl-C9M">
+                        <rect key="frame" x="8" y="79" width="74" height="13.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <color key="textColor" red="0.2274509804" green="0.68627450980000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir5-n5-5um">
+                        <rect key="frame" x="8" y="92" width="74" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="8gV-Cr-JZI" firstAttribute="leading" secondItem="VJa-tm-N6h" secondAttribute="leadingMargin" id="4lX-jR-Ong"/>
+                <constraint firstItem="ir5-n5-5um" firstAttribute="top" secondItem="9eM-Dl-C9M" secondAttribute="bottom" id="DiO-JT-igw"/>
+                <constraint firstItem="ir5-n5-5um" firstAttribute="trailing" secondItem="9eM-Dl-C9M" secondAttribute="trailing" id="Ets-SI-ZZd"/>
+                <constraint firstItem="8gV-Cr-JZI" firstAttribute="top" secondItem="Q3O-Uj-Jfx" secondAttribute="bottom" constant="4" id="H7B-7A-hbX"/>
+                <constraint firstItem="ir5-n5-5um" firstAttribute="leading" secondItem="9eM-Dl-C9M" secondAttribute="leading" id="HXn-Wh-tEu"/>
+                <constraint firstItem="Q3O-Uj-Jfx" firstAttribute="top" secondItem="VJa-tm-N6h" secondAttribute="topMargin" id="MCq-MB-MNA"/>
+                <constraint firstAttribute="centerX" secondItem="Q3O-Uj-Jfx" secondAttribute="centerX" id="efa-0R-Yig"/>
+                <constraint firstItem="8gV-Cr-JZI" firstAttribute="trailing" secondItem="VJa-tm-N6h" secondAttribute="trailingMargin" id="fBz-mg-7IC"/>
+                <constraint firstItem="9eM-Dl-C9M" firstAttribute="top" secondItem="8gV-Cr-JZI" secondAttribute="bottom" constant="2" id="hMO-jO-vbJ"/>
+                <constraint firstItem="9eM-Dl-C9M" firstAttribute="trailing" secondItem="8gV-Cr-JZI" secondAttribute="trailing" id="xYd-mN-nTz"/>
+                <constraint firstItem="9eM-Dl-C9M" firstAttribute="leading" secondItem="8gV-Cr-JZI" secondAttribute="leading" id="yqu-b2-Mid"/>
+            </constraints>
+            <connections>
+                <outlet property="dividerView" destination="8gV-Cr-JZI" id="oX1-JC-zdN"/>
+                <outlet property="imageView" destination="Q3O-Uj-Jfx" id="wJY-Hg-smv"/>
+                <outlet property="projectNameLabel" destination="9eM-Dl-C9M" id="XiA-Kz-eyL"/>
+                <outlet property="statusLabel" destination="ir5-n5-5um" id="zQL-WG-wZF"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

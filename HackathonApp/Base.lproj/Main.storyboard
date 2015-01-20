@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yWJ-Hh-e7g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yWJ-Hh-e7g">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Sign In View Controller-->
@@ -29,12 +28,12 @@
                                             <constraint firstAttribute="width" constant="280" id="SOB-ry-cJd"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSI-tI-2Hb">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSI-tI-2Hb" customClass="IconTextField" customModule="HackathonApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="338" width="280" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOO-ZM-sbu">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOO-ZM-sbu" customClass="IconTextField" customModule="HackathonApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="300" width="280" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -106,12 +105,98 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="S2L-nM-lLh" kind="relationship" relationship="rootViewController" id="B1t-Rc-8bH"/>
+                        <segue destination="67d-dZ-zg8" kind="relationship" relationship="rootViewController" id="MNK-Ds-w8e"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERV-7l-Zw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-167" y="57"/>
+        </scene>
+        <!--Hackathon-->
+        <scene sceneID="Nlz-DZ-5Tb">
+            <objects>
+                <viewController id="67d-dZ-zg8" customClass="DashboardViewController" customModule="HackathonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCJ-cB-byR"/>
+                        <viewControllerLayoutGuide type="bottom" id="v1A-NI-PHY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vJC-Dl-eMt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Myt-wC-hAc" userLabel="User View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="fKD-bR-MJ5">
+                                        <rect key="frame" x="10" y="6" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="BYE-yJ-RE2"/>
+                                            <constraint firstAttribute="width" secondItem="fKD-bR-MJ5" secondAttribute="height" multiplier="1:1" id="xSh-9z-H2z"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-aT-vfy">
+                                        <rect key="frame" x="50" y="13" width="542" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92156862750000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="c7y-aT-vfy" firstAttribute="leading" secondItem="fKD-bR-MJ5" secondAttribute="trailing" constant="8" id="Ai5-As-h5o"/>
+                                    <constraint firstAttribute="centerY" secondItem="c7y-aT-vfy" secondAttribute="centerY" constant="0.5" id="FdI-eu-Zyn"/>
+                                    <constraint firstAttribute="centerY" secondItem="fKD-bR-MJ5" secondAttribute="centerY" id="Gfn-vH-lYb"/>
+                                    <constraint firstAttribute="height" constant="44" id="KwG-iE-p4O"/>
+                                    <constraint firstItem="fKD-bR-MJ5" firstAttribute="leading" secondItem="Myt-wC-hAc" secondAttribute="leading" constant="10" id="m08-6i-8me"/>
+                                    <constraint firstAttribute="trailing" secondItem="c7y-aT-vfy" secondAttribute="trailing" constant="8" id="tKK-WT-bj7"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yMK-4l-pu8">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kRb-YP-iBB">
+                                    <size key="itemSize" width="90" height="112"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProjectCollectionViewCell" id="pE1-tR-RpZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="112"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HackathonSectionHeader" id="Tiw-xV-Vda">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v1A-NI-PHY" firstAttribute="top" secondItem="yMK-4l-pu8" secondAttribute="bottom" id="A4R-UN-NyI"/>
+                            <constraint firstAttribute="trailing" secondItem="yMK-4l-pu8" secondAttribute="trailing" id="DW9-4b-vre"/>
+                            <constraint firstItem="Myt-wC-hAc" firstAttribute="top" secondItem="dCJ-cB-byR" secondAttribute="bottom" id="FEU-U8-1aE"/>
+                            <constraint firstItem="Myt-wC-hAc" firstAttribute="leading" secondItem="vJC-Dl-eMt" secondAttribute="leading" id="Jdb-6q-GtT"/>
+                            <constraint firstItem="yMK-4l-pu8" firstAttribute="leading" secondItem="vJC-Dl-eMt" secondAttribute="leading" id="TSH-ZX-Y6l"/>
+                            <constraint firstItem="yMK-4l-pu8" firstAttribute="top" secondItem="Myt-wC-hAc" secondAttribute="bottom" id="kIM-Ya-bGS"/>
+                            <constraint firstAttribute="trailing" secondItem="Myt-wC-hAc" secondAttribute="trailing" id="qFz-eM-KYV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hackathon" id="vQy-mL-04B"/>
+                    <connections>
+                        <outlet property="projectsCollectionView" destination="yMK-4l-pu8" id="EI6-5t-y4b"/>
+                        <outlet property="userLabel" destination="c7y-aT-vfy" id="EHZ-aE-8BI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Uv-fH-N3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="57"/>
         </scene>
         <!--Hackathons-->
         <scene sceneID="bIb-Hy-J6E">
@@ -122,76 +207,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fmZ-7x-cXy">
-                            <size key="itemSize" width="140" height="160"/>
-                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="itemSize" width="90" height="112.5"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProjectCollectionViewCell" id="Hht-sB-BLP" customClass="ProjectCollectionViewCell" customModule="HackathonApp" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KeP-bl-Z6E">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="140" height="160"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="112.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vx8-Kd-nHW">
-                                            <rect key="frame" x="20" y="8" width="100" height="100"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="bAQ-w7-79k"/>
-                                                <constraint firstAttribute="width" secondItem="vx8-Kd-nHW" secondAttribute="height" multiplier="1:1" id="gor-Dj-lGO"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acL-Gv-ses">
-                                            <rect key="frame" x="47" y="116" width="45.5" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQt-xG-q87">
-                                            <rect key="frame" x="52" y="133" width="36" height="14.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <constraints>
-                                    <constraint firstItem="acL-Gv-ses" firstAttribute="top" secondItem="vx8-Kd-nHW" secondAttribute="bottom" constant="8" id="3bb-6R-mrY"/>
-                                    <constraint firstAttribute="centerX" secondItem="acL-Gv-ses" secondAttribute="centerX" id="5KA-0s-q14"/>
-                                    <constraint firstItem="aQt-xG-q87" firstAttribute="top" secondItem="acL-Gv-ses" secondAttribute="bottom" id="BSd-pi-WSm"/>
-                                    <constraint firstAttribute="centerX" secondItem="vx8-Kd-nHW" secondAttribute="centerX" id="Tmo-hv-ci8"/>
-                                    <constraint firstItem="vx8-Kd-nHW" firstAttribute="top" secondItem="Hht-sB-BLP" secondAttribute="topMargin" id="oKb-Ub-wtS"/>
-                                    <constraint firstAttribute="centerX" secondItem="aQt-xG-q87" secondAttribute="centerX" id="w2e-na-l8F"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="imageView" destination="vx8-Kd-nHW" id="AYc-7Z-3lg"/>
-                                    <outlet property="projectNameLabel" destination="acL-Gv-ses" id="RFS-JQ-C9d"/>
-                                    <outlet property="statusLabel" destination="aQt-xG-q87" id="28J-9Z-J0R"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HackathonSectionHeader" id="Dwu-zQ-csQ" customClass="HackathonSectionHeader" customModule="HackathonApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5Q-gr-SaT">
-                                    <rect key="frame" x="8" y="15" width="564" height="20"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="trailingMargin" secondItem="M5Q-gr-SaT" secondAttribute="trailing" constant="20" id="4hu-xE-YwS"/>
-                                <constraint firstItem="M5Q-gr-SaT" firstAttribute="leading" secondItem="Dwu-zQ-csQ" secondAttribute="leadingMargin" id="KaL-on-okj"/>
-                                <constraint firstAttribute="centerY" secondItem="M5Q-gr-SaT" secondAttribute="centerY" constant="0.5" id="nYC-ID-AsD"/>
-                            </constraints>
-                            <connections>
-                                <outlet property="sectionHeaderLabel" destination="M5Q-gr-SaT" id="ILh-YC-e9u"/>
-                            </connections>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="S2L-nM-lLh" id="Fiy-Ud-bCP"/>
                             <outlet property="delegate" destination="S2L-nM-lLh" id="zE7-wC-KWN"/>
@@ -201,10 +232,11 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VO3-Ee-weF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="57"/>
+            <point key="canvasLocation" x="1260" y="57"/>
         </scene>
     </scenes>
     <resources>
         <image name="HackathonLogo" width="281" height="282"/>
+        <image name="user_icon" width="22" height="22"/>
     </resources>
 </document>

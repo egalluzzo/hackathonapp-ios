@@ -9,5 +9,6 @@
 import UIKit
 
 class HackathonSectionHeader : UICollectionReusableView {
+    @IBOutlet weak var topBorderView: UIView!
     @IBOutlet weak var sectionHeaderLabel: UILabel!
 }

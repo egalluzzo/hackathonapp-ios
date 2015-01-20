@@ -12,6 +12,11 @@ class HackathonsCollectionViewController: UICollectionViewController {
     var hackathons: [Hackathon] = [];
     
     override func awakeFromNib() {
+        self.collectionView?.registerNib(UINib(nibName: "ProjectCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: "ProjectCollectionViewCell");
+        self.collectionView?.registerNib(UINib(nibName: "HackathonSectionHeader", bundle: nil),
+            forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+            withReuseIdentifier: "HackathonSectionHeader");
         hackathons = [
             createHackathon(name: "Hackathon #3", date: NSDate(timeIntervalSinceNow: 0*24*60*60), projects: [
                 createProject(name: "My Project"),
@@ -37,6 +42,7 @@ class HackathonsCollectionViewController: UICollectionViewController {
         var dateFormat = NSDateFormatter();
         dateFormat.dateFormat = "M/d/yyyy";
         sectionHeader.sectionHeaderLabel.text = "\(hackathon.name) - \(dateFormat.stringFromDate(hackathon.date))";
+        sectionHeader.topBorderView.hidden = (indexPath.section == 0);
         return sectionHeader;
     }
     

@@ -12,11 +12,10 @@ class ProjectCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var projectNameLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var dividerView: UIView!
     
     override func awakeFromNib() {
-        self.layer.borderColor = Colors.darkBackgroundColor().CGColor;
-        self.layer.backgroundColor = Colors.lightBackgroundColor().CGColor;
-        self.layer.borderWidth = 1.0;
-        self.layer.cornerRadius = 3.0;
+        Theme.themeCardView(view: self);
+        dividerView.backgroundColor = Theme.cardBorderColor();
     }
 }
