@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="90" height="112.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q3O-Uj-Jfx">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HackathonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Q3O-Uj-Jfx">
                         <rect key="frame" x="13" y="8" width="64" height="64"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="64" id="Ae0-t2-z4N"/>
@@ -66,4 +66,7 @@
             </connections>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="HackathonLogo" width="281" height="282"/>
+    </resources>
 </document>
