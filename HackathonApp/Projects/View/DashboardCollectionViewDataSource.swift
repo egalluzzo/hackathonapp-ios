@@ -41,4 +41,8 @@ class DashboardCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         view.sectionHeaderLabel.text = categories[indexPath.section].name;
         return view;
     }
+    
+    func projectAtIndexPath(indexPath: NSIndexPath) -> Project {
+        return categories[indexPath.section].projects[indexPath.row];
+    }
 }

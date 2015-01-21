@@ -47,6 +47,7 @@
             <connections>
                 <outlet property="sectionHeaderLabel" destination="wHe-WO-Xd6" id="YMo-ns-0ox"/>
                 <outlet property="topBorderView" destination="jzJ-Mf-kLE" id="gbS-Gu-0Jn"/>
+                <outlet property="viewAllButton" destination="bXH-37-FiC" id="C0f-ve-OKZ"/>
             </connections>
         </collectionReusableView>
     </objects>

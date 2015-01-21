@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var userLabel: UILabel! {
         didSet {
             NSLog("Set userLabel to %@", userLabel);
@@ -33,6 +33,8 @@ class DashboardViewController: UIViewController {
     private let allProjectsCategory = DashboardCategory(name: "All Projects");
     private var categories: [DashboardCategory] = []; // can't seem to initialize this here for some reason
     
+    private var selectedProject: Project?;
+    
     override func viewDidLoad() {
         NSLog("viewDidLoad");
         
@@ -48,6 +50,11 @@ class DashboardViewController: UIViewController {
         categories = [yourProjectsCategory, recentIdeasCategory, allProjectsCategory];
         dataSource = DashboardCollectionViewDataSource(categories: categories);
         projectsCollectionView.dataSource = self.dataSource;
+        projectsCollectionView.delegate = self;
+        
+        userLabel.text = User.currentUser()?.name;
+        
+        // All the below is placeholder until we call the real services.
         
         let otherUser = createUser(name: "Other Guy", email: "otherguy@example.com");
         let hackathon = createHackathon(name: "Hackathon #3");
@@ -57,13 +64,12 @@ class DashboardViewController: UIViewController {
             createProject(name: "Another Project", creator: otherUser, hackathon: hackathon),
             createProject(name: "Bright Idea", hackathon: nil),
             createProject(name: "Bad Idea", hackathon: nil)];
-        
-        userLabel.text = User.currentUser()?.name;
     }
     
     private func createProject(#name: String, creator: User = User.currentUser()!, hackathon: Hackathon?) -> Project {
         let project = Project(group: Group.currentGroup()!, creator: creator);
         project.name = name;
+        project.description = "A wonderful project that the whole family will enjoy!";
         project.hackathon = hackathon;
         return project;
     }
@@ -77,7 +83,7 @@ class DashboardViewController: UIViewController {
     
     private func createHackathon(#name: String) -> Hackathon {
         let hackathon = Hackathon(group: Group.currentGroup()!, creator: User.currentUser()!);
-        hackathon.name = "Hackathon #3";
+        hackathon.name = name;
         return hackathon;
     }
     
@@ -101,5 +107,17 @@ class DashboardViewController: UIViewController {
         }
         
         projectsCollectionView.reloadData();
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.selectedProject = self.dataSource.projectAtIndexPath(indexPath);
+        self.performSegueWithIdentifier("DashboardToProjectSegue", sender: self);
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "DashboardToProjectSegue") {
+            var projectViewController = segue.destinationViewController as ProjectViewController;
+            projectViewController.project = selectedProject;
+        }
     }
 }
