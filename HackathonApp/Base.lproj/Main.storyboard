@@ -200,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="565" y="57"/>
         </scene>
-        <!--Project View Controller-->
+        <!--Project Details-->
         <scene sceneID="b9L-Lc-PlL">
             <objects>
                 <collectionViewController id="oR7-Kb-WUG" customClass="ProjectViewController" customModule="HackathonApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,6 +234,7 @@
                             <outlet property="delegate" destination="oR7-Kb-WUG" id="R9b-iD-7ip"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Project Details" id="YOW-cF-iqU"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hA-XA-8Gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -69,8 +69,10 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate {
     private func createProject(#name: String, creator: User = User.currentUser()!, hackathon: Hackathon?) -> Project {
         let project = Project(group: Group.currentGroup()!, creator: creator);
         project.name = name;
-        project.description = "A wonderful project that the whole family will enjoy!";
+        project.description = "An app that allows users to manage hackathons and collaborate amongst other participants.";
+        project.repositoryUrl = "https://github.com/egalluzzo/hackathonapp-ios";
         project.hackathon = hackathon;
+        project.status = ProjectStatus.PrototypeInProgress;
         return project;
     }
     

@@ -48,7 +48,7 @@ class ProjectViewController: UICollectionViewController {
         self.collectionView!.dataSource = self.dataSource;
         self.collectionView!.delegate = self.dataSource;
         
-        self.navigationItem.title = project?.name;
+//        self.navigationItem.title = project?.name;
     }
 
     /*

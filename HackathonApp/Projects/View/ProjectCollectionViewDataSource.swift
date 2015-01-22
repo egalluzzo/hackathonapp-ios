@@ -58,7 +58,9 @@ class ProjectCollectionViewDataSource: NSObject, UICollectionViewDataSource, UIC
             switch (indexPath.section) {
             case 0:
                 var headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "ProjectFixedDetailsHeaderView", forIndexPath: indexPath) as ProjectFixedDetailsHeaderView;
-                headerView.userLabel.text = project.creator?.name;
+                headerView.projectNameLabel.text = project.name;
+                headerView.projectStatusLabel.text = project.idea ? "Idea" : projectStatusText(status: project.status);
+                headerView.repositoryUrlLabel.text = project.repositoryUrl;
                 headerView.projectDescriptionLabel.text = project.description;
                 return headerView;
             case 1:
@@ -109,5 +111,26 @@ class ProjectCollectionViewDataSource: NSObject, UICollectionViewDataSource, UIC
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return CGSizeZero;
+    }
+    
+    private func projectStatusText(#status: ProjectStatus) -> String {
+        switch (status) {
+        case .NotStarted:
+            return "Not Started";
+        case .PrototypeInProgress:
+            return "Prototype in Progress";
+        case .PrototypeComplete:
+            return "Prototype Complete";
+        case .ScheduledForImplementation:
+            return "Scheduled for Implementation";
+        case .ImplementationInProgress:
+            return "Implementation in Progress";
+        case .ImplementationComplete:
+            return "Implementation Complete";
+        case .Shipped:
+            return "Shipped";
+        default:
+            return "Unknown";
+        }
     }
 }
