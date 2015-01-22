@@ -14,6 +14,8 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
+    lazy var signInService = StubSignInService();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,16 +30,26 @@ class SignInViewController: UIViewController {
     }
     
     func signInTapped() {
-        var me = User(creator: nil);
-        me.name = "Eric Galluzzo";
-        me.email = "egalluzzo@gmail.com";
-        User.setCurrentUser(me);
-        
-        var myGroup = Group(creator: nil);
-        myGroup.name = "Kroger";
-        Group.setCurrentGroup(myGroup);
-        
-        self.performSegueWithIdentifier("SignInToHackathonsSegue", sender: self);
+        signInService.login(
+            email: usernameTextField.text,
+            password: passwordTextField.text,
+            success: {(let user) in
+                User.setCurrentUser(user);
+                
+                var myGroup = Group(creator: nil);
+                myGroup.name = "Kroger";
+                Group.setCurrentGroup(myGroup);
+                
+                self.performSegueWithIdentifier("SignInToHackathonsSegue", sender: self);
+            },
+            failure: {(let error) in
+                UIAlertView(
+                    title: "Login failed",
+                    message: error.localizedDescription,
+                    delegate: nil,
+                    cancelButtonTitle: "OK")
+                    .show();
+            });
     }
     
     func registerTapped() {

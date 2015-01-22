@@ -30,6 +30,12 @@
 		07AE89EA1A6EF8480045ADA1 /* ProjectCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89E91A6EF8480045ADA1 /* ProjectCollectionViewDataSource.swift */; };
 		07AE89EB1A6EF8480045ADA1 /* ProjectCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89E91A6EF8480045ADA1 /* ProjectCollectionViewDataSource.swift */; };
 		07AE89ED1A6F1DAD0045ADA1 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89EC1A6F1DAC0045ADA1 /* ProjectViewController.swift */; };
+		07AE89F01A7072F10045ADA1 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89EF1A7072F10045ADA1 /* SignInService.swift */; };
+		07AE89F21A7097F40045ADA1 /* NetworkSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89F11A7097F40045ADA1 /* NetworkSignInService.swift */; };
+		07AE89F31A7097F40045ADA1 /* NetworkSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89F11A7097F40045ADA1 /* NetworkSignInService.swift */; };
+		07AE89F51A7124D00045ADA1 /* StubSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89F41A7124D00045ADA1 /* StubSignInService.swift */; };
+		07AE89F61A7124D00045ADA1 /* StubSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89F41A7124D00045ADA1 /* StubSignInService.swift */; };
+		07AE89F71A7125560045ADA1 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE89EF1A7072F10045ADA1 /* SignInService.swift */; };
 		07AF4A90198489820035D3E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4A8F198489820035D3E1 /* AppDelegate.swift */; };
 		07AF4A95198489820035D3E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A93198489820035D3E1 /* Main.storyboard */; };
 		07AF4A97198489820035D3E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AF4A96198489820035D3E1 /* Images.xcassets */; };
@@ -98,6 +104,9 @@
 		07AE89E61A6EF65C0045ADA1 /* RatingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingCollectionViewCell.xib; sourceTree = "<group>"; };
 		07AE89E91A6EF8480045ADA1 /* ProjectCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		07AE89EC1A6F1DAC0045ADA1 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		07AE89EF1A7072F10045ADA1 /* SignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		07AE89F11A7097F40045ADA1 /* NetworkSignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSignInService.swift; sourceTree = "<group>"; };
+		07AE89F41A7124D00045ADA1 /* StubSignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubSignInService.swift; sourceTree = "<group>"; };
 		07AF4A8A198489820035D3E1 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AF4A8E198489820035D3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AF4A8F198489820035D3E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +192,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		07AE89EE1A7066BB0045ADA1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				07AE89EF1A7072F10045ADA1 /* SignInService.swift */,
+				07AE89F11A7097F40045ADA1 /* NetworkSignInService.swift */,
+				07AE89F41A7124D00045ADA1 /* StubSignInService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		07AF4A81198489820035D3E1 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +264,7 @@
 		07AF4AB019855D590035D3E1 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				07AE89EE1A7066BB0045ADA1 /* Service */,
 				075B999B1A654A400074F7FD /* View */,
 			);
 			path = SignIn;
@@ -420,6 +440,8 @@
 				07AE89D91A6C24EA0045ADA1 /* DashboardCategory.swift in Sources */,
 				07AF4AC1198D814C0035D3E1 /* Hackathon.swift in Sources */,
 				07AE89EA1A6EF8480045ADA1 /* ProjectCollectionViewDataSource.swift in Sources */,
+				07AE89F21A7097F40045ADA1 /* NetworkSignInService.swift in Sources */,
+				07AE89F51A7124D00045ADA1 /* StubSignInService.swift in Sources */,
 				07AE89E71A6EF65C0045ADA1 /* RatingCollectionViewCell.swift in Sources */,
 				07AE89D71A6C242F0045ADA1 /* DashboardCollectionViewDataSource.swift in Sources */,
 				07AF4AC7198D85740035D3E1 /* Group.swift in Sources */,
@@ -427,6 +449,7 @@
 				07AF4AD2198D8CAE0035D3E1 /* GlobalRemoteObject.swift in Sources */,
 				075B999D1A654F170074F7FD /* ProjectCollectionViewCell.swift in Sources */,
 				075B999F1A6553030074F7FD /* HackathonSectionHeader.swift in Sources */,
+				07AE89F01A7072F10045ADA1 /* SignInService.swift in Sources */,
 				075B99A21A659E050074F7FD /* Swift-MD5.swift in Sources */,
 				07AF4ACA198D898E0035D3E1 /* UserRole.swift in Sources */,
 				07AE89CB1A681DD90045ADA1 /* Theme.swift in Sources */,
@@ -443,11 +466,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AE89F31A7097F40045ADA1 /* NetworkSignInService.swift in Sources */,
 				07AF4AD0198D8A7F0035D3E1 /* RemoteObject.swift in Sources */,
 				07AF4AA3198489820035D3E1 /* HackathonAppTests.swift in Sources */,
 				075B99AF1A67423D0074F7FD /* Swift-MD5.swift in Sources */,
 				07AE89DA1A6C24EA0045ADA1 /* DashboardCategory.swift in Sources */,
 				07AE89EB1A6EF8480045ADA1 /* ProjectCollectionViewDataSource.swift in Sources */,
+				07AE89F61A7124D00045ADA1 /* StubSignInService.swift in Sources */,
+				07AE89F71A7125560045ADA1 /* SignInService.swift in Sources */,
 				07AF4ACB198D898E0035D3E1 /* UserRole.swift in Sources */,
 				07AF4ABA198D7F1E0035D3E1 /* Project.swift in Sources */,
 				07AF4ABF198D80100035D3E1 /* User.swift in Sources */,

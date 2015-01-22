@@ -12,8 +12,9 @@ var _currentUser: User?;
 
 class User: GlobalRemoteObject {
     
-    var name: String = ""
-    var email: String = ""
+    var name = ""
+    var email = ""
+    var token = ""
     
     class func currentUser() -> User? {
         return _currentUser;
